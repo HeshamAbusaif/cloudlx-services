@@ -1,0 +1,324 @@
+/* here you can put your own css to customize and override the theme */
+.confirmation {
+  .popover-content {
+    .btn-group {
+      .btn-danger {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      .btn-success {
+        float: right;
+      }
+    }
+  }
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.no-padding {
+  padding:0;
+}
+.padding10 {
+  padding: 10px;
+}
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.div-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.width150px {
+  min-width: 150px;
+}
+
+body {
+  .CodeMirror {
+    z-index: 0;
+  }
+  .red-text {
+    color: #ce5163 !important;
+  }
+  .green-text {
+    color: green !important;
+  }
+  .white-text {
+    color: #fff;
+    a {
+      text-decoration: none;
+    }
+    a:hover, a:focus, a:active {
+      color: #fff;
+    }
+  }
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a > i,
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active.open > a > i,
+  .page-sidebar .page-sidebar-menu > li.active > a > i,
+  .page-sidebar .page-sidebar-menu > li.active.open > a > i {
+    color: #b57b53;
+  }
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li:hover > a > i,
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.open > a > i,
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu > li.active > a > i,
+  .page-sidebar .page-sidebar-menu .sub-menu > li:hover > a > i,
+  .page-sidebar .page-sidebar-menu .sub-menu > li.open > a > i,
+  .page-sidebar .page-sidebar-menu .sub-menu > li.active > a > i {
+    color: #b57b53;
+  }
+
+  .no-style-list {
+    list-style: none;
+  }
+  .btn.red:not(.btn-outline) {
+    color: #ffffff;
+    background-color: #ce5163;
+    border-color: #ce5163;
+  }
+  .btn.green-sharp:not(.btn-outline) {
+    color: #FFFFFF;
+    background-color: #306ea9;
+    border-color: #306ea9;
+  }
+
+  .portlet-body.green, .portlet.green {
+    background-color: #306ea9;
+  }
+  .portlet.box.green > .portlet-title {
+    background-color: #306ea9;
+  }
+  .page-header {
+    .page-header-inner {
+      .page-logo {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background: #fff;
+        height: 45px;
+        .sidebar-toggler, a {
+          margin: 0 auto;
+          height: 11px;
+          background: none;
+          font-size: 2em;
+        }
+        img {
+          width: 35px;
+        }
+        .logo-default {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.remove_used_image_btn, .set_new_thumbnail_btn {
+  z-index: 1;
+}
+
+.page-content {
+  .portlet.box.green {
+    border: 1px solid #306ea9;
+  }
+}
+
+.page-sidebar .page-sidebar-menu > li > a > .title,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+body .page-sidebar .page-sidebar-menu > li > a {
+  text-align: left;
+  min-height: 0;
+}
+
+.page-sidebar-wrapper {
+  .page-sidebar {
+    position: fixed;
+    z-index: 2;
+  }
+}
+
+.portlet .portlet-body {
+  .table {
+    tr {
+      td, th {
+        vertical-align: middle;
+      }
+      th {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.dashboard-stat {
+  .visual {
+    [class^="iconmoon-"], [class*=" iconmoon-"] {
+      font-size: 2em;
+    }
+  }
+}
+
+.form-group .gallery-used-img {
+  object-fit: cover;
+  width: 100%;
+  height: 111px;
+}
+
+.portlet {
+  .form-group {
+    .input-group {
+      z-index: 0;
+    }
+  }
+}
+
+/* layout fix for Select2 autocomplete library  */
+.select2-container {
+  z-index: 0;
+}
+
+#dropzoneBody {
+  .set_thumbnail_btn {
+    z-index: 1;
+  }
+}
+
+textarea{
+  resize: none !important;
+}
+
+.mt20{
+  margin-top: 20px;
+}
+
+.portlet > .portlet-body {
+  overflow-x: scroll;
+}
+
+.flex-bar {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 600px) {
+    justify-content: initial;
+  }
+
+  &__button + &__button{
+    margin-left: 20px;
+    @media screen and (max-width: 600px){
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+
+  &__button{
+    flex-grow: 1;
+    @media screen and (max-width: 600px){
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 49px;
+    width: calc(100% / 5);
+
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    .help-block {
+      padding: 0;
+      margin: 0;
+    }
+
+    &_check{
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .select2-container--bootstrap .select2-selection {
+      position: relative;
+    }
+
+    .form-group,
+    .select2-container,
+    .form-control,
+    select {
+      width: 100% !important;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: calc(100% / 3);
+    }
+    @media screen and (max-width: 768px) {
+      width: calc(50% - 5px);
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    &.flex-bar-button {
+      width: 100%;
+      padding-left: 10px;
+      justify-content: flex-start;
+      height: initial;
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+      }
+
+      button {
+        width: initial;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.flex-btn-row {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  button, a, form {
+    width: calc(50% - 5px);
+  }
+}
+
+.row_setting{
+  @media screen and (max-width: 1024px){
+    min-width: 1024px;
+  }
+}
