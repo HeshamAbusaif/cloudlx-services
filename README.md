@@ -1,16 +1,19 @@
 ---------------------------------------------------------------------------
-Prequtires:
--Composer
--"php": "7.2.*"
+> Prequtires: 
+>> Composer 
+
+>> php 7.2.* 
 
 
-Commands to run:
-composer install
+> Commands to run: 
+>> composer install
 
-Please create .env file from .env.example and add values to:
-CLOUDLX_CLIENT_ID:
-CLOUDLX_CLIENT_SECRET:
+> Please create .env file from .env.example and add values to:
+>>CLOUDLX_CLIENT_ID:
 
-Routes available:
-/services
-/services/{id}
+>>CLOUDLX_CLIENT_SECRET:
+
+> Available Routes:
+>>/services
+
+>>/services/{id}
